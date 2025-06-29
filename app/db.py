@@ -10,7 +10,7 @@ POSTGRES_URL = os.getenv("POSTGRES_URL")
 POSTGRES_DATABASE = os.getenv("POSTGRES_DATABASE")
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "")
-POSTGRES_PORT = os.getenv("POSTGRES_PORT")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", 5432)
 
 if POSTGRES_URL is None:
     raise RuntimeError("Environment variable POSTGRES_URL is not set")
